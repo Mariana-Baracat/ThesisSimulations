@@ -32,7 +32,7 @@ h=[hfsc zeros(1,N_hat-length(hfsc))];
 H=zeros(N_hat,N_hat);
    
 
- for i_CH=1:(N_hat+Ncp)
+ for i_CH=1:(N_hat)
      H(:,i_CH)= circshift(h,[0 (i_CH-1)]);
  end
 
